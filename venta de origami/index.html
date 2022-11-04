@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina Web</title>
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <h1>Origami para ti</h1>
+            <h3>Sumérgete en el mundo del origami</h3>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="imagenes/carrito-ventas.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Tu compra</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc1.jpg" alt="">
+                    <p><span>7</span>$</p>
+                </div>
+                <p class="title">Escuadrón de aviones de papel - Crea 20 aviones de papel, rellenos de calcetines para niños y niñas</p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc2.jpg" alt="">
+                    <p><span>14</span>$</p>
+                </div>
+                <p class="title"> Papel Hapray para origami, 144 hojas de papel de origami, 72 patrones </p>
+                <a href="" class="btn-add-cart" data-id="2">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc3.jpg" alt="">
+                    <p><span>14</span>$</p>
+                </div>
+                <p class="title"> Aviones de papel - Kit de manualidades | Actividades de avión para niños | El juego incluye 65 hojas de 40 colores</p>
+                <a href="" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc4.jpg" alt="">
+                    <p><span>14</span>$</p>
+                </div>
+                <p class="title"> Gamenote Colorido kit de origami para niños, 108 papel de origami vívido de doble cara</p>
+                <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc5.jpg" alt="">
+                    <p><span>19</span>$</p>
+                </div>
+                <p class="title"> Origami Paper - Juego de papel de Origami de doble cara para niños, hojas cuadradas de 6 pulgadas en colores vivos</p>
+                <a href="" data-id="5" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc6.jpg" alt="">
+                    <p><span>6</span>$</p>
+                </div>
+                <p class="title"> Kit de papel de origami 50 hojas cuadradas de 6 pulgadas, color de doble cara, 50 colores vivos de chiyo japoneses</p>
+                <a href="" data-id="6" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc7.jpg" alt="">
+                    <p><span>10</span>$</p>
+                </div>
+                <p class="title">Yeooyoor Origami Stars Papers - Paquete de papel para bricolaje, 600 hojas, 20 colores (brilla en la oscuridad)</p>
+                <a href="" data-id="7" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc8.jpg" alt="">
+                    <p><span>8</span>$</p>
+                </div>
+                <p class="title">Herramienta de puntuación, herramienta plegable de papel, arrugador de origami de hueso para hacer tarjetas de álbumes de recortes</p>
+                <a href="" data-id="8" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc9.jpg" alt="">
+                    <p><span>14</span>$</p>
+                </div>
+                <p class="title">1000 hojas de papel de origami, varios tamaños, para manualidades, papel cuadrado de doble cara</p>
+                <a href="" data-id="9" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc10.jpg" alt="">
+                    <p><span>19</span>$</p>
+                </div>
+                <p class="title">Aigybobo Juego de papel Origami, 308 piezas de papel de manualidades para niños con libro de instrucciones para niñas</p>
+                <a href="" data-id="10" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc11.jpg" alt="">
+                    <p><span>8</span>$</p>
+                </div>
+                <p class="title">Papel de origami de doble cara 12 diseños vibrantes de hermoso espacio exterior de galaxia, fácil de plegar para álbumes</p>
+                <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="imagenes/produc12.jpg" alt="">
+                    <p><span>10</span>$</p>
+                </div>
+                <p class="title">840 hojas de papel de origami luminoso con diferentes patrones, tira de papel de estrellas, estrellas de papel de la suerte</p>
+                <a href="" data-id="11" class="btn-add-cart">Agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="script.js" ></script>
+</body>
+</html>
